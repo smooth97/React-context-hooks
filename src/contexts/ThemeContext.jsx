@@ -14,8 +14,11 @@ export const ThemeContextProvider = props => {
     ui: "#333",
     bg: "#555"
   });
+  const toggle = () => {
+    setLightTheme(!lightTheme);
+  };
   return (
-    <ThemeContext.Provider value={[lightTheme, setLightTheme]}>
+    <ThemeContext.Provider value={[lightTheme, light, dark, toggle]}>
       {props.children}
     </ThemeContext.Provider>
   );
