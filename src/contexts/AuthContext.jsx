@@ -2,10 +2,13 @@ import React, { createContext, useState } from "react";
 
 export const AuthContext = createContext();
 
-const AuthContextProvider = () => {
+const AuthContextProvider = props => {
   const [authenticated, setAuthenticated] = useState(false);
+  const toggleAuth = () => {
+    setAuthenticated(!authenticated);
+  }
   return (
-    <AuthContext.Provider value={[authenticated]}>
+    <AuthContext.Provider value={[authenticated, toggleAuth]}>
       {props.children}
     </AuthContext.Provider>
   );
