@@ -8,7 +8,7 @@ const Navbar = () => {
   const [authenticated, toggleAuth] = useContext(AuthContext);
 
   return (
-    <nav style={{ background: theme.ui, color: theme.syntex }}>
+    <nav style={{ background: theme.ui, color: theme.syntax }}>
       <h1>Context App</h1>
       <div onClick={toggleAuth}>
         {authenticated ? 'Logged In' : 'Logged Out'}
