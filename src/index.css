@@ -25,10 +25,16 @@ nav p {
 .book-list {
   margin: auto;
   width: 70vw;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 20px;
   cursor: pointer;
   background: rgb(26, 25, 25);
+}
+
+.book-list li {
+  margin: 2%;
+  padding: 1%;
+  background: rgb(49, 49, 49);
 }
 
 .book-list li:hover {
@@ -50,4 +56,5 @@ nav p {
 .empty {
   margin: 20px;
   text-align: center;
+  color: orange;
 }
